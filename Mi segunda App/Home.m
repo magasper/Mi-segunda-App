@@ -34,7 +34,8 @@ int value =0;
     //QUE ES ARRAYWITHOBJECTS
     
     _value = [NSArray arrayWithObjects:@"clic1", @"clic2", @"clic3", @"clic4", @"clic5", nil];
-    _myColorArray = [UIColor redColor];
+    _myColorArray = [[NSArray alloc] initWithObjects: [UIColor redColor], [UIColor blueColor], [UIColor purpleColor],
+                     [UIColor greenColor],[UIColor blackColor], nil];
     
     if (value == [_value count]) {
 
@@ -42,10 +43,8 @@ int value =0;
     }
     
     //SACAS DE _VALUE EL VALOR DE VALUE?
-     self.lblWelcome.text = [_value objectAtIndex:value];
-    NSString *algo = [_myColorArray objectAtIndex:value];
-    char *color = "UIColor " +algo;
-    self.lblWelcome.textColor = [color];
+    self.lblWelcome.text = [_value objectAtIndex:value];
+    self.lblWelcome.textColor = [_myColorArray objectAtIndex:value];
     value ++;
     
     
