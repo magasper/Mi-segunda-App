@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4883898E1F69F5FC00D248E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4883898D1F69F5FC00D248E5 /* main.m */; };
 		488389911F69F5FC00D248E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 488389901F69F5FC00D248E5 /* AppDelegate.m */; };
-		488389941F69F5FC00D248E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488389931F69F5FC00D248E5 /* ViewController.m */; };
+		488389941F69F5FC00D248E5 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 488389931F69F5FC00D248E5 /* Home.m */; };
 		488389971F69F5FC00D248E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488389951F69F5FC00D248E5 /* Main.storyboard */; };
 		4883899A1F69F5FC00D248E5 /* Mi_segunda_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 488389981F69F5FC00D248E5 /* Mi_segunda_App.xcdatamodeld */; };
 		4883899C1F69F5FC00D248E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4883899B1F69F5FC00D248E5 /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		4883898D1F69F5FC00D248E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4883898F1F69F5FC00D248E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		488389901F69F5FC00D248E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		488389921F69F5FC00D248E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		488389931F69F5FC00D248E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		488389921F69F5FC00D248E5 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		488389931F69F5FC00D248E5 /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		488389961F69F5FC00D248E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		488389991F69F5FC00D248E5 /* Mi_segunda_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mi_segunda_App.xcdatamodel; sourceTree = "<group>"; };
 		4883899B1F69F5FC00D248E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,8 @@
 		4883898B1F69F5FB00D248E5 /* Mi segunda App */ = {
 			isa = PBXGroup;
 			children = (
-				4883898F1F69F5FC00D248E5 /* AppDelegate.h */,
-				488389901F69F5FC00D248E5 /* AppDelegate.m */,
-				488389921F69F5FC00D248E5 /* ViewController.h */,
-				488389931F69F5FC00D248E5 /* ViewController.m */,
+				488389A81F69F80900D248E5 /* Main */,
+				488389A71F69F7BE00D248E5 /* Controllers */,
 				488389951F69F5FC00D248E5 /* Main.storyboard */,
 				4883899B1F69F5FC00D248E5 /* Assets.xcassets */,
 				4883899D1F69F5FC00D248E5 /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				4883898D1F69F5FC00D248E5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		488389A71F69F7BE00D248E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				488389931F69F5FC00D248E5 /* Home.m */,
+				488389921F69F5FC00D248E5 /* Home.h */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		488389A81F69F80900D248E5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				488389901F69F5FC00D248E5 /* AppDelegate.m */,
+				4883898F1F69F5FC00D248E5 /* AppDelegate.h */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				488389941F69F5FC00D248E5 /* ViewController.m in Sources */,
+				488389941F69F5FC00D248E5 /* Home.m in Sources */,
 				488389911F69F5FC00D248E5 /* AppDelegate.m in Sources */,
 				4883898E1F69F5FC00D248E5 /* main.m in Sources */,
 				4883899A1F69F5FC00D248E5 /* Mi_segunda_App.xcdatamodeld in Sources */,
